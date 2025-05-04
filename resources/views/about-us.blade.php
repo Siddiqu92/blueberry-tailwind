@@ -1,44 +1,18 @@
-<!DOCTYPE html>
-<html lang="en">
+@extends('layouts.master')
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Blueberry - Multi Purpose eCommerce Template.">
-    <meta name="keywords" content="eCommerce, mart, apparel, catalog, fashion, Tailwind, multipurpose, online store, shop, store, template">
-    <title>Blueberry - eCommerce Tailwind CSS template</title>
+@section('title', 'About Us')
 
-    <!-- Site Favicon -->
-    <link rel="icon" href="assets/img/favicon/favicon.png" type="image/x-icon">
-
-    <!-- Css All Plugins Files -->
-    <link rel="stylesheet" href="assets/css/vendor/remixicon.css">
-    <link rel="stylesheet" href="assets/css/vendor/aos.css">
-    <link rel="stylesheet" href="assets/css/vendor/swiper-bundle.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/owl.carousel.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/slick.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/animate.min.css">
-    <link rel="stylesheet" href="assets/css/vendor/jquery-range-ui.css">
-
-    <!-- tailwindcss -->
-    <script src="assets/js/vendor/tailwindcss3.4.5.js"></script>
-
-    <!-- Main Style -->
-    <link rel="stylesheet" href="assets/css/style.css">
-
-</head>
-
-<body>
-
-    <!-- Loader -->
-    <div class="bb-loader min-w-full w-full h-screen fixed top-[0] left-[0] flex items-center justify-center bg-[#fff] z-[45]">
+{{-- Loader --}}
+@section('loader')
+<div class="bb-loader min-w-full w-full h-screen fixed top-[0] left-[0] flex items-center justify-center bg-[#fff] z-[45]">
         <img src="assets/img/logo/loader.png" alt="loader" class="absolute">
         <span class="loader w-[60px] h-[60px] relative"></span>
     </div>
+@endsection
 
-    <!-- Header -->
-    <header class="bb-header relative z-[5] border-b-[1px] border-solid border-[#eee]">
+{{-- Header --}}
+@section('header')
+<header class="bb-header relative z-[5] border-b-[1px] border-solid border-[#eee]">
         <div class="top-header bg-[#3d4750] py-[6px] max-[991px]:hidden">
             <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
                 <div class="flex flex-wrap w-full">
@@ -446,9 +420,11 @@
             </div>
         </div>
     </header>
-    
-    <!-- Breadcrumb -->
-    <section class="section-breadcrumb mb-[50px] max-[1199px]:mb-[35px] border-b-[1px] border-solid border-[#eee] bg-[#f8f8fb]">
+@endsection
+
+{{-- Breadcrumb --}}
+@section('breadcrumb')
+<section class="section-breadcrumb mb-[50px] max-[1199px]:mb-[35px] border-b-[1px] border-solid border-[#eee] bg-[#f8f8fb]">
         <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full">
                 <div class="w-full px-[12px]">
@@ -468,9 +444,11 @@
             </div>
         </div>
     </section>
+@endsection
 
-    <!-- About -->
-    <section class="section-about py-[50px] max-[1199px]:py-[35px]">
+{{-- About --}}
+@section('about')
+<section class="section-about py-[50px] max-[1199px]:py-[35px]">
         <div class="flex flex-wrap justify-between items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full mb-[-24px]">
                 <div class="min-[992px]:w-[50%] w-full px-[12px] mb-[24px]">
@@ -533,9 +511,11 @@
             </div>
         </div>
     </section>
+@endsection
 
-    <!-- Services -->
-    <section class="section-services py-[50px] max-[1199px]:py-[35px]">
+{{-- Services --}}
+@section('services')
+<section class="section-services py-[50px] max-[1199px]:py-[35px]">
         <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full mb-[-24px]">
                 <div class="w-full px-[12px]">
@@ -593,9 +573,11 @@
             </div>
         </div>
     </section>
+@endsection
 
-    <!-- Testimonials -->
-    <section class="section-testimonials overflow-hidden py-[100px] max-[1199px]:py-[70px] max-[991px]:p-[0]">
+{{-- Testimonials --}}
+@section('testimonials')
+<section class="section-testimonials overflow-hidden py-[100px] max-[1199px]:py-[70px] max-[991px]:p-[0]">
         <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full">
                 <div class="w-full px-[12px]">
@@ -691,9 +673,11 @@
             </div>
         </div>
     </section>
+@endsection
 
-    <!-- Team -->
-    <section class="section-team py-[50px] max-[1199px]:py-[35px]">
+{{-- Team --}}
+@section('team')
+<section class="section-team py-[50px] max-[1199px]:py-[35px]">
         <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
             <div class="flex flex-wrap w-full">
                 <div class="w-full px-[12px]">
@@ -803,9 +787,11 @@
             </div>
         </div>
     </section>
+@endsection
 
-    <!-- Footer -->
-    <footer class="bb-footer mt-[50px] max-[1199px]:mt-[35px] bg-[#f8f8fb] text-[#fff]">
+{{-- Footer --}}
+@section('footer')
+<footer class="bb-footer mt-[50px] max-[1199px]:mt-[35px] bg-[#f8f8fb] text-[#fff]">
         <div class="footer-directory py-[50px] max-[1199px]:py-[35px] border-[1px] border-solid border-solid">
             <div class="flex flex-wrap justify-between relative items-center mx-auto min-[1400px]:max-w-[1320px] min-[1200px]:max-w-[1140px] min-[992px]:max-w-[960px] min-[768px]:max-w-[720px] min-[576px]:max-w-[540px]">
                 <div class="flex flex-wrap w-full">
@@ -1159,9 +1145,11 @@
             </div>
         </div>
     </footer>
+@endsection
 
-    <!-- Cart sidebar -->
-    <div class="bb-side-cart-overlay hidden w-full h-screen fixed top-[0] left-[0] bg-[#00000080] z-[17]"></div>
+{{-- Cart Sidebar --}}
+@section('cart-sidebar')
+<div class="bb-side-cart-overlay hidden w-full h-screen fixed top-[0] left-[0] bg-[#00000080] z-[17]"></div>
     <div class="bb-side-cart w-[770px] h-[calc(100%-30px)] my-[15px] ml-[15px] pt-[15px] px-[8px] text-[14px] font-normal fixed z-[17] top-[0] right-[0] left-[auto] block transition-all duration-[0.5s] ease delay-[0s] translate-x-[100%] bg-[#fff] overflow-auto opacity-[0] rounded-tl-[20px] rounded-bl-[20px] max-[991px]:w-[740px] max-[767px]:w-[350px] max-[575px]:w-[300px]">
         <div class="flex flex-wrap h-full">
             <div class="min-[768px]:w-[41.66%] w-full px-[12px] max-[767px]:hidden">
@@ -1346,9 +1334,11 @@
             </div>
         </div>
     </div>
+@endsection
 
-    <!-- Category Popup -->
-    <div class="bb-category-sidebar transition-all duration-[0.3s] ease-in-out w-full h-full fixed top-[0] z-[17] hidden">
+{{-- Category Popup --}}
+@section('category-popup')
+<div class="bb-category-sidebar transition-all duration-[0.3s] ease-in-out w-full h-full fixed top-[0] z-[17] hidden">
         <div class="bb-category-overlay hidden w-full h-screen fixed top-[0] left-[0] bg-[#00000080] z-[17]"></div>
         <div class="category-sidebar w-[calc(100%-30px)] max-[1199px]:h-[calc(100vh-60px)] max-w-[1200px] my-[15px] mx-[auto] py-[30px] px-[15px] text-[14px] font-normal transition-all duration-[0.5s] ease-in-out delay-[0s] bg-[#fff] overflow-auto rounded-[30px] z-[18] relative">
             <button type="button" class="bb-category-close transition-all duration-[0.3s] ease-in-out w-[16px] h-[20px] absolute top-[-5px] right-[27px] bg-[#e04e4eb3] rounded-[10px] cursor-pointer hover:bg-[#e04e4e]" title="Close"></button>
@@ -1618,9 +1608,11 @@
             </div>
         </div>
     </div>
+@endsection
 
-    <!-- Tools Sidebar -->
-    <div class="bb-tools-sidebar-overlay w-full h-screen fixed top-[0] left-[0] bg-[#00000080] z-[16] hidden"></div>
+{{-- Tools Sidebar --}}
+@section('tools-sidebar')
+<div class="bb-tools-sidebar-overlay w-full h-screen fixed top-[0] left-[0] bg-[#00000080] z-[16] hidden"></div>
     <div class="bb-tools-sidebar w-[300px] h-screen fixed right-[0] top-[0] bg-[#fff] transition-all duration-[0.3s] ease z-[16] translate-x-[300px]">
         <a href="javascript:void(0)" class="bb-tools-sidebar-toggle in-out absolute top-[45%] right-[302px] w-[40px] h-[40px] bg-[#3d4750] transition-all duration-[0.3s] ease-in flex items-center justify-center text-[25px] z-[-1] rounded-[5px]">
             <i class="ri-settings-fill text-[20px] text-[#fff]"></i>
@@ -1686,9 +1678,11 @@
             </div>
         </div>
     </div>
+@endsection
 
-    <!-- Back to top  -->
-    <a href="#Top" class="back-to-top result-placeholder transition-all duration-[0.3s] ease-in-out w-[38px] h-[38px] hidden fixed right-[15px] bottom-[15px] z-[10] rounded-[20px] cursor-pointer bg-[#fff] text-[#6c7fd8] border-[1px] border-solid border-[#6c7fd8] text-center text-[22px] leading-[1.6]">
+{{-- Back to Top --}}
+@section('back-to-top')
+<a href="#Top" class="back-to-top result-placeholder transition-all duration-[0.3s] ease-in-out w-[38px] h-[38px] hidden fixed right-[15px] bottom-[15px] z-[10] rounded-[20px] cursor-pointer bg-[#fff] text-[#6c7fd8] border-[1px] border-solid border-[#6c7fd8] text-center text-[22px] leading-[1.6]">
         <i class="ri-arrow-up-line text-[20px]"></i>
         <div class="back-to-top-wrap active-progress">
             <svg viewBox="-1 -1 102 102" class="w-[36px] h-[36px] fixed right-[16px] bottom-[16px]">
@@ -1696,20 +1690,4 @@
             </svg>
         </div>
     </a>
-    
-    <!-- Plugins -->
-    <script src="assets/js/vendor/jquery.min.js"></script>
-    <script src="assets/js/vendor/jquery.zoom.min.js"></script>
-    <script src="assets/js/vendor/aos.js"></script>
-    <script src="assets/js/vendor/swiper-bundle.min.js"></script>
-    <script src="assets/js/vendor/smoothscroll.min.js"></script>
-    <script src="assets/js/vendor/owl.carousel.min.js"></script>
-    <script src="assets/js/vendor/slick.min.js"></script>
-    <script src="assets/js/vendor/jquery-range-ui.min.js"></script>
-
-    <!-- main-js -->
-    <script src="assets/js/main.js"></script>
-
-</body>
-
-</html>
+@endsection
