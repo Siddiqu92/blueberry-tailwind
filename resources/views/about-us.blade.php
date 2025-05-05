@@ -1,6 +1,15 @@
 @extends('layouts.master')
 
-@section('title', 'About Us')
+@section('title', 'About Us - Blueberry')
+
+{{-- Head Section --}}
+@push('head')
+    {{-- Page-specific Meta Tags --}}
+    <meta name="description" content="Learn more about Blueberry - your trusted multipurpose eCommerce destination.">
+    <meta name="keywords" content="About Blueberry, eCommerce team, mission, vision, company, Tailwind, online store, fashion, catalog">
+    <meta name="author" content="Blueberry Team">
+@endpush
+
 
 {{-- Loader --}}
 @section('loader')
@@ -1691,3 +1700,8 @@
         </div>
     </a>
 @endsection
+
+{{-- Additional Scripts --}}
+@push('scripts')
+    
+@endpush

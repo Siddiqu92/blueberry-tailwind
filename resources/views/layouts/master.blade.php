@@ -44,6 +44,18 @@
         {{-- Breadcrumb (Used in About Us, Shop, etc.) --}}
         @yield('breadcrumb')
 
+        {{-- Detail Section --}}
+        @yield('detail')
+
+        {{-- Product Detail Page --}}
+        @yield('product')
+
+        {{-- Related Products --}}
+        @yield('related-products')
+
+        {{-- Shop Section --}}
+        @yield('shop')
+
         {{-- Categories --}}
         @yield('categories')
 
